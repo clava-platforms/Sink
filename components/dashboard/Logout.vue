@@ -1,10 +1,5 @@
 <script setup>
 import { LogOut } from 'lucide-vue-next'
-
-function logOut() {
-  localStorage.removeItem('SinkSiteToken')
-  navigateTo('/dashboard/login')
-}
 </script>
 
 <template>
@@ -16,16 +11,13 @@ function logOut() {
     </AlertDialogTrigger>
     <AlertDialogContent class="max-w-[95svw] max-h-[95svh] md:max-w-lg grid-rows-[auto_minmax(0,1fr)_auto]">
       <AlertDialogHeader>
-        <AlertDialogTitle>{{ $t('logout.title') }}</AlertDialogTitle>
+        <AlertDialogTitle>Logout</AlertDialogTitle>
         <AlertDialogDescription>
-          {{ $t('logout.confirm') }}
+          Please log out via Cloudflare Access.
         </AlertDialogDescription>
       </AlertDialogHeader>
       <AlertDialogFooter>
-        <AlertDialogCancel>{{ $t('common.cancel') }}</AlertDialogCancel>
-        <AlertDialogAction @click="logOut">
-          {{ $t('logout.action') }}
-        </AlertDialogAction>
+        <AlertDialogCancel>OK</AlertDialogCancel>
       </AlertDialogFooter>
     </AlertDialogContent>
   </AlertDialog>
