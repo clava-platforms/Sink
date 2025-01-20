@@ -28,6 +28,7 @@
     "@vueuse/core": "^12.2.0",
     "fuse.js": "^7.0.0",
     "intl-parse-accept-language": "^1.0.0",
+    "jose-browser-runtime": "^5.9.6",
     "lucide-vue-next": "^0.469.0",
     "mysql-bricks": "^1.1.2",
     "nanoid": "^5.0.9",
